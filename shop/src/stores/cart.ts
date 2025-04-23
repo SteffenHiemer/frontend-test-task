@@ -19,12 +19,8 @@ export interface CartItem extends Product {
   total: number
 }
 
-export interface CartTotals {
-  subtotal: number
-  tax: number
-  shipping: number
-  total: number
-}
+
+// TODO: Define more Types
 
 export const useCartStore = defineStore('cart', () => {
   const cartItems = ref<CartItem[]>([])
